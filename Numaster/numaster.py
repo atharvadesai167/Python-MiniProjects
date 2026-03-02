@@ -8,9 +8,10 @@ while True:
     print("1. Easy (1-10, 5 tries)")
     print("2. Medium (1-50, 7 tries)")
     print("3. Hard (1-100, 10 tries)")
-    print("4. Extreme (1 - 1000, 50 tries)")
+    print("4. Very Hard (1 - 500, 25 tries)")
+    print("5. Extreme (1 - 1000, 50 tries)")
 
-    choice = input("Enter your choice (1/2/3/4): ")
+    choice = input("Enter your choice (1/2/3/4/5): ")
 
     if choice == '1':
         number = random.randint(1,10)
@@ -22,6 +23,9 @@ while True:
         number = random.randint(1,100)
         attempts = 10
     elif choice == '4':
+        number = random.randint(1,500)
+        attempts = 25
+    elif choice == '5':
         number = random.randint(1,1000)
         attempts = 50
     else:
